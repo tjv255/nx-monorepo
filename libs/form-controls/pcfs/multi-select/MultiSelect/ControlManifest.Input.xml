@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="SampleNameSpace" constructor="MultiSelect" version="0.1.2" display-name-key="MultiSelect" description-key="MultiSelect description" control-type="standard" >
+
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    
+    <property name="anchor" display-name-key="Anchor" description-key="The column to anchor the control to." of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="primaryEntityId" display-name-key="Primary Entity ID" description-key="ID for the primary entity record." of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="primaryRelationshipName" display-name-key="Primary Relationship Name" description-key="Name of the one to many relationship between the primary and intermediary entities." of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="targetRelationshipName" display-name-key="Target Relationship Name" description-key="Name of the one to many relationship between the target and intermediary entities." of-type="SingleLine.Text" usage="input" required="true" />
+    
+    <property name="selectedLookups" display-name-key="Selected Lookups" description-key="A multi-line text field to store a JSON array of selected lookups." of-type="Multiple" usage="bound" required="false" />
+    
+    <property name="displaySearchBox" display-name-key="Display Search Box on input" description-key="." of-type="Multiple" usage="bound" required="false" />
+    
+    <property name="filter" display-name-key="Filter" description-key="An OData filter for querying options in the dropdown." of-type="Multiple" usage="input" required="false" />
+    <property name="clearSelectionOnFilterUpdate" display-name-key="Clear Selection On Filter Update" description-key="Clears selection when the filter input changes." of-type="TwoOptions" usage="input" required="false" default-value="0" />
+    
+    <property name="label" display-name-key="Label" description-key="A label to display on the input." of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="placeholder" display-name-key="Placeholder" description-key="A placeholder to display on the input." of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="tagLimit" display-name-key="Limit Tags" description-key="A number to limit the amount of tags shown when focus is not on the control." of-type="Whole.None" usage="input" required="false" default-value="-1" />
+    <property name="selectionLimit" display-name-key="Limit Selections" description-key="A number to limit the amount of options that can be selected at a time." of-type="Whole.None" usage="input" required="false" default-value="-1" />
+    <property name="disableCloseOnSelect" display-name-key="Disable Close On Select" description-key="Stops the dropdown from closing when items are selected." of-type="TwoOptions" usage="input" required="false" default-value="0" />
+    <property name="disableClearable" display-name-key="Disable Clearable" description-key="Removes the action to clear all selections." of-type="TwoOptions" usage="input" required="false" default-value="0" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>

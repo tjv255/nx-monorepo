@@ -1,0 +1,6 @@
+.container {
+  background-color: yellow;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+}

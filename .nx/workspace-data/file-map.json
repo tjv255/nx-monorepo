@@ -1,0 +1,451 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.3.2",
+  "deps": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fluentui/react-components": "^9.54.17",
+    "@mui/material": "^5.15.14",
+    "@storybook/react": "^8.1.7",
+    "@storybook/react-webpack5": "^8.1.7",
+    "lodash.debounce": "^4.0.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "^8.1.7",
+    "tslib": "^2.3.0",
+    "@babel/core": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@nx/cypress": "19.3.2",
+    "@nx/devkit": "19.3.2",
+    "@nx/eslint": "19.3.2",
+    "@nx/eslint-plugin": "19.3.2",
+    "@nx/jest": "19.3.2",
+    "@nx/js": "19.3.2",
+    "@nx/playwright": "19.3.2",
+    "@nx/plugin": "^19.3.2",
+    "@nx/react": "19.3.2",
+    "@nx/storybook": "19.3.2",
+    "@nx/vite": "19.3.2",
+    "@nx/web": "19.3.2",
+    "@nx/webpack": "19.3.2",
+    "@nx/workspace": "19.3.2",
+    "@playwright/test": "^1.36.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+    "@storybook/addon-essentials": "8.1.7",
+    "@storybook/addon-interactions": "^8.0.5",
+    "@storybook/addon-jest": "^8.3.5",
+    "@storybook/addon-links": "^8.3.5",
+    "@storybook/core-server": "8.1.7",
+    "@storybook/jest": "^0.2.3",
+    "@storybook/react-vite": "8.1.7",
+    "@storybook/test-runner": "^0.19.1",
+    "@storybook/testing-library": "^0.2.2",
+    "@svgr/webpack": "^8.0.1",
+    "@swc-node/register": "~1.8.0",
+    "@swc/cli": "~0.1.62",
+    "@swc/core": "~1.3.85",
+    "@swc/helpers": "~0.5.2",
+    "@testing-library/react": "14.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/lodash": "^4.17.10",
+    "@types/node": "18.16.9",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.3.0",
+    "@typescript-eslint/parser": "^7.3.0",
+    "babel-jest": "^29.4.1",
+    "core-js": "^3.36.1",
+    "eslint": "~8.57.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-playwright": "^0.15.3",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "jest-environment-node": "^29.4.1",
+    "lodash": "^4.17.21",
+    "nx": "19.3.2",
+    "prettier": "^2.6.2",
+    "react-refresh": "^0.10.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "~5.4.2",
+    "url-loader": "^4.1.1",
+    "vite": "~5.0.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "pathMappings": {
+    "@react-monorepo/automation": [
+      "libs/automation/src/index.ts"
+    ],
+    "@react-monorepo/form-controls-ui": [
+      "libs/form-controls/ui/src/index.ts"
+    ],
+    "@react-monorepo/form-controls/pcfs/multi-select": [
+      "libs/form-controls/pcfs/multi-select/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "name": "@nx/storybook/plugin",
+      "options": {
+        "buildStorybookTargetName": "build-storybook",
+        "serveStorybookTargetName": "storybook",
+        "testStorybookTargetName": "test-storybook",
+        "staticStorybookTargetName": "static-storybook"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "746227632153557778"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "12736829338295210693"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4422400126597322578"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "10736989266964588500"
+      },
+      {
+        "file": "README.md",
+        "hash": "653957818700982754"
+      },
+      {
+        "file": "doctor-storybook.log",
+        "hash": "9048462069663472792"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "nx.json",
+        "hash": "4586571591370156268"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "17431925660499958452"
+      },
+      {
+        "file": "package.json",
+        "hash": "7806807672726979736"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16978932450516536629"
+      }
+    ],
+    "projectFileMap": {
+      "form-controls-pcfs-multi-select": [
+        {
+          "file": "libs/form-controls/pcfs/multi-select/.eslintrc.json",
+          "hash": "3564820429006674170"
+        },
+        {
+          "file": "libs/form-controls/pcfs/multi-select/.gitignore",
+          "hash": "12062649690572823276"
+        },
+        {
+          "file": "libs/form-controls/pcfs/multi-select/MultiSelect/ControlManifest.Input.xml",
+          "hash": "14387135261767047447"
+        },
+        {
+          "file": "libs/form-controls/pcfs/multi-select/MultiSelect/api.ts",
+          "hash": "15162706171938368240"
+        },
+        {
+          "file": "libs/form-controls/pcfs/multi-select/MultiSelect/index.ts",
+          "hash": "14987412038350689085",
+          "deps": [
+            "form-controls-ui"
+          ]
+        },
+        {
+          "file": "libs/form-controls/pcfs/multi-select/MultiSelect/interfaces.ts",
+          "hash": "10662241694974322177"
+        },
+        {
+          "file": "libs/form-controls/pcfs/multi-select/multi-select.pcfproj",
+          "hash": "10982349151981600270"
+        },
+        {
+          "file": "libs/form-controls/pcfs/multi-select/package-lock.json",
+          "hash": "4056142018851987257"
+        },
+        {
+          "file": "libs/form-controls/pcfs/multi-select/package.json",
+          "hash": "12143770642199683688",
+          "deps": [
+            "npm:eslint",
+            "npm:lodash"
+          ]
+        },
+        {
+          "file": "libs/form-controls/pcfs/multi-select/pcfconfig.json",
+          "hash": "18121114728838182588"
+        },
+        {
+          "file": "libs/form-controls/pcfs/multi-select/project.json",
+          "hash": "15693861791029094411"
+        },
+        {
+          "file": "libs/form-controls/pcfs/multi-select/tsconfig.json",
+          "hash": "6756408049363815530"
+        }
+      ],
+      "form-controls-ui": [
+        {
+          "file": "libs/form-controls/ui/.babelrc",
+          "hash": "15003411175763814189"
+        },
+        {
+          "file": "libs/form-controls/ui/.eslintrc.json",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/form-controls/ui/.storybook/decorators.tsx",
+          "hash": "4500309756099407664",
+          "deps": [
+            "npm:@fluentui/react-components",
+            "npm:@fluentui/react-theme"
+          ]
+        },
+        {
+          "file": "libs/form-controls/ui/.storybook/main.ts",
+          "hash": "7456870887482953226",
+          "deps": [
+            "npm:@storybook/react-webpack5"
+          ]
+        },
+        {
+          "file": "libs/form-controls/ui/.storybook/preview.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/form-controls/ui/README.md",
+          "hash": "2982983963096860576"
+        },
+        {
+          "file": "libs/form-controls/ui/jest.config.ts",
+          "hash": "13569644609807319116"
+        },
+        {
+          "file": "libs/form-controls/ui/package-lock.json",
+          "hash": "13750114185440833101"
+        },
+        {
+          "file": "libs/form-controls/ui/package.json",
+          "hash": "15683895378379655532",
+          "deps": [
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/form-controls/ui/project.json",
+          "hash": "2801055759691996808"
+        },
+        {
+          "file": "libs/form-controls/ui/src/index.ts",
+          "hash": "10870020652200647158"
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/EmailDateBanner/EmailDateBanner.stories.tsx",
+          "hash": "12189386665891771810",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/EmailDateBanner/EmailDateBanner.tsx",
+          "hash": "12191316272929270574"
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/EmailDateBanner/style.css",
+          "hash": "15692147822939636404"
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/LookupSelector/Avatar.tsx",
+          "hash": "15329665034256687986",
+          "deps": [
+            "npm:@fluentui/react-components"
+          ]
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/LookupSelector/LookupOption.tsx",
+          "hash": "16879848951626786014",
+          "deps": [
+            "npm:@fluentui/react-components"
+          ]
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/LookupSelector/LookupSelector.stories.tsx",
+          "hash": "10931880224509508938",
+          "deps": [
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/LookupSelector/LookupSelectorBase.tsx",
+          "hash": "16702652046440676455",
+          "deps": [
+            "npm:react",
+            "npm:@fluentui/react-components",
+            "npm:lodash"
+          ]
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/LookupSelector/Tag.tsx",
+          "hash": "7649238464817358215",
+          "deps": [
+            "npm:react",
+            "npm:@fluentui/react-components"
+          ]
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/LookupSelector/interfaces.ts",
+          "hash": "11274672199006824754"
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/MultiSelect/MultiSelect.stories.tsx",
+          "hash": "15610641766605351029",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/MultiSelect/MultiSelect.tsx",
+          "hash": "9264828181823718211",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/MultiSelect/OverflowTooltip.tsx",
+          "hash": "18327317123416460077",
+          "deps": [
+            "npm:react",
+            "npm:lodash"
+          ]
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/MultiSelect/data.ts",
+          "hash": "4880193051049451897"
+        },
+        {
+          "file": "libs/form-controls/ui/src/lib/MultiSelect/index.ts",
+          "hash": "10055369641918940715"
+        },
+        {
+          "file": "libs/form-controls/ui/tsconfig.json",
+          "hash": "11825512505076520526"
+        },
+        {
+          "file": "libs/form-controls/ui/tsconfig.lib.json",
+          "hash": "7808344151483589488"
+        },
+        {
+          "file": "libs/form-controls/ui/tsconfig.spec.json",
+          "hash": "9110660443763673899"
+        },
+        {
+          "file": "libs/form-controls/ui/tsconfig.storybook.json",
+          "hash": "17160026149145892629"
+        }
+      ],
+      "automation": [
+        {
+          "file": "libs/automation/.eslintrc.json",
+          "hash": "12630981649015448940"
+        },
+        {
+          "file": "libs/automation/README.md",
+          "hash": "16888280841266702082"
+        },
+        {
+          "file": "libs/automation/generators.json",
+          "hash": "5983584677401818059"
+        },
+        {
+          "file": "libs/automation/package.json",
+          "hash": "4744458842539645403"
+        },
+        {
+          "file": "libs/automation/project.json",
+          "hash": "6032228393636448307"
+        },
+        {
+          "file": "libs/automation/src/index.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/automation/tsconfig.json",
+          "hash": "2840670722752396445"
+        },
+        {
+          "file": "libs/automation/tsconfig.lib.json",
+          "hash": "3632393694954060084"
+        },
+        {
+          "file": "libs/automation/tsconfig.spec.json",
+          "hash": "11550347367511341917"
+        }
+      ]
+    }
+  }
+}

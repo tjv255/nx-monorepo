@@ -1,0 +1,19 @@
+{
+  "name": "form-controls-pcfs-multi-select",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/form-controls/pcfs/multi-select/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/form-controls/pcfs/multi-select",
+        "main": "libs/form-controls/pcfs/multi-select/src/index.ts",
+        "tsConfig": "libs/form-controls/pcfs/multi-select/tsconfig.lib.json",
+        "assets": ["libs/form-controls/pcfs/multi-select/*.md"]
+      }
+    }
+  }
+}

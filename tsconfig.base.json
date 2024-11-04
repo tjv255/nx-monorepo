@@ -1,20 +1,33 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
     "declaration": false,
-    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "lib": ["es2022", "dom"],
     "module": "esnext",
-    "lib": ["es2020", "dom"],
-    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {}
+    "skipLibCheck": true,
+    "rootDir": ".",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2015",
+    "paths": {
+      "@react-monorepo/automation": ["libs/automation/src/index.ts"],
+      "@react-monorepo/form-controls-ui": [
+        "libs/form-controls/ui/src/index.ts"
+      ],
+      "@react-monorepo/form-controls/pcfs/multi-select": [
+        "libs/form-controls/pcfs/multi-select/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

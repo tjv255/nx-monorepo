@@ -1,0 +1,13 @@
+{
+  "extends": "../../../../tsconfig.base.json",
+  "compilerOptions": {
+    "allowUmdGlobalAccess": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@form-controls/ui/*": ["../../ui/src/lib/*"]
+    },
+    "typeRoots": ["node_modules/@types"]
+  }
+}

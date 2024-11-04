@@ -1,0 +1,19 @@
+{
+  "name": "form-controls-ui",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/form-controls/ui/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/form-controls/ui",
+        "main": "libs/form-controls/ui/src/index.ts",
+        "tsConfig": "libs/form-controls/ui/tsconfig.lib.json",
+        "assets": ["libs/form-controls/ui/*.md"]
+      }
+    }
+  }
+}
